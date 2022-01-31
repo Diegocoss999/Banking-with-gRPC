@@ -1,0 +1,8 @@
+INFO:root:SERVER CREATED::PORT:50051
+INFO:root:SERVER CONNECTED::PORT50051
+INFO:root:SERVER:50051::prop_create:[John]::Amount:[150]
+INFO:root:SERVER:50051::propagate_deposit:[John]::Amount:[160]
+INFO:root:SERVER:50051::query:[John]::Amount:[160]
+INFO:root:SERVER:50051::propagate_deposit:[John]::Amount:[170]
+INFO:root:SERVER:50051::query:[John]::Amount:[170]
+INFO:root:SERVER:50051::propagate_deposit:[John]::Amount:[180]

@@ -1,0 +1,26 @@
+INFO:root:SERVER CREATED::PORT:50052
+INFO:root:SERVER CREATED::PORT:50051
+INFO:root:SERVER CONNECTED::PORT50050
+INFO:root:SERVER CONNECTED::PORT50052
+ERROR:root:SERVER:50052::create:[John]::Amount:[0]
+INFO:root:SERVER:50052::query:[John]::Amount:[150]
+INFO:root:SERVER CONNECTED::PORT50051
+INFO:root:SERVER:50051::prop_create:[John]::Amount:[150]
+ERROR:root:SERVER:50050::prop_create:[John]::Amount:[0]
+ERROR:root:SERVER:50052::prop_create:[John]::Amount:[0]
+ERROR:root:SERVER:50051::prop_create:[John]::Amount:[0]
+INFO:root:SERVER:50050::create:[John]::Amount:[150]
+INFO:root:SERVER:50052::create:[John]::Amount:[150]
+INFO:root:SERVER:50051::propagate_withdraw:[John]::Amount:[50]
+INFO:root:SERVER:50052::propagate_withdraw:[John]::Amount:[50]
+INFO:root:SERVER:50052::query:[John]::Amount:[50]
+INFO:root:SERVER:50050::query:[John]::Amount:[50]
+INFO:root:SERVER:50050::withdraw:[John]::Amount:[50]
+ERROR:root:SERVER:50052::withdraw:[John]::Amount:[0]
+ERROR:root:SERVER:50051::withdraw:[John]::Amount:[0]
+INFO:root:SERVER:50051::query:[John]::Amount:[50]
+INFO:root:SERVER:50052::query:[John]::Amount:[50]
+INFO:root:SERVER:50050::query:[John]::Amount:[50]
+ERROR:root:SERVER:50050::withdraw:[John]::Amount:[0]
+ERROR:root:SERVER:50050::withdraw:[John]::Amount:[0]
+ERROR:root:SERVER:50051::withdraw:[John]::Amount:[0]

@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+//package RPCServicer;
+//python -m grpc_tools.protoc -I . --python_out=. --grpc_python_out=. week3.proto
+// The greeting service definition.
+service RPCServicer {
+  rpc MsgDelivery(request_service) returns (success) {}
+  //rpc lock_server(request_lock) returns (lock_success) {}
+
+}
+
+message request_lock{
+  string user = 1;
+  bool lock = 2;
+  int32 clock = 3;
+}
+message lock_success{
+  string user = 3;
+  bool success = 1;
+  int32 clock = 2;
+}
+
+
+message request_service{
+  string user = 1;
+  string request = 2;
+  int32 money = 3;
+  int32 clock = 4;
+}
+message success{
+  bool success = 5;
+  int32 money = 6;
+  int32 clock = 7;
+}

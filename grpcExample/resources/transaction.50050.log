@@ -1,0 +1,9 @@
+INFO:root:SERVER CREATED::PORT:50050
+INFO:root:SERVER CONNECTED::PORT50050
+INFO:root:SERVER:50050::prop_create:[John]::Amount:[150]
+INFO:root:SERVER:50050::query:[John]::Amount:[150]
+INFO:root:SERVER:50050::deposit:[John]::Amount:[160]
+INFO:root:SERVER:50050::query:[John]::Amount:[160]
+INFO:root:SERVER:50050::propagate_deposit:[John]::Amount:[170]
+INFO:root:SERVER:50050::propagate_deposit:[John]::Amount:[180]
+INFO:root:SERVER:50050::query:[John]::Amount:[180]
